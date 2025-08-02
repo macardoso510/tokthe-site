@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #00423d;
+  --color-header-bg: #000000;
+  --color-accent: #e6b17a;
+  --color-reservas: #d7263d;
+  --color-reservas-hover: #b71c2a;
+  --color-link-hover: #00e667;
+  --color-header-shadow: rgba(0,0,0,0.08);
+  --color-content-bg: #002f2c;
+  --color-white: #fff;
+}
