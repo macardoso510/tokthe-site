@@ -6,6 +6,7 @@ import Values from "./pages/values/Values";
 import Menu from "./pages/menu/Menu";
 import WorkWithUs from "./pages/workWithUs/WorkWithUs";
 import NotFound from "./pages/notFound/NotFound";
+import Home from "./pages/home/Home";
 
 export default function App() {
   const location = useLocation();
@@ -32,11 +33,7 @@ export default function App() {
           <Route path="/trabalhe-conosco" element={<WorkWithUs />} />
         </Routes>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
-
-  function Home() {
-    return <h1>Home</h1>;
-  }
 }

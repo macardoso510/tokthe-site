@@ -1,0 +1,45 @@
+@import '../home/Home.css';
+
+.valor.destaque {
+    font-size: 2rem;
+    color: var(--color-primary);
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.promo-section {
+    background: linear-gradient(120deg, #fff8f0 60%, #ffe5b4 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    padding: 40px 30px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.promo-section h2 {
+    color: var(--color-primary);
+    margin-bottom: 12px;
+}
+
+.codigo {
+    background: var(--color-accent);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.promo-relampago-section {
+    background: linear-gradient(120deg, #ffe5b4 60%, #fff8f0 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    padding: 40px 30px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.promo-relampago-section h2 {
+    color: #b71c2a;
+    margin-bottom: 12px;
+}

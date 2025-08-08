@@ -1,6 +1,10 @@
+import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 import "./Header.css";
+
 export default function Header() {
+  const [menuAberto, setMenuAberto] = useState(false);
+
   return (
     <>
       <header className="header">
@@ -10,11 +14,19 @@ export default function Header() {
               <img src="/toktheLogo.png" alt="Tokthe Sushi" />
             </a>
           </div>
-          <nav className="nav-links">
-            <Link to="/sobre">Sobre</Link>
-            <Link to="/valores">Valores</Link>
-            <Link to="/cardapio">Cardápio</Link>
-            <Link to="/trabalhe">Trabalhe Conosco</Link>
+          <nav className={`nav-links ${menuAberto ? "aberto" : ""}`}>
+            <Link to="/sobre" onClick={() => setMenuAberto(false)}>
+              Sobre
+            </Link>
+            <Link to="/valores" onClick={() => setMenuAberto(false)}>
+              Valores
+            </Link>
+            <Link to="/cardapio" onClick={() => setMenuAberto(false)}>
+              Cardápio
+            </Link>
+            <Link to="/trabalhe" onClick={() => setMenuAberto(false)}>
+              Trabalhe Conosco
+            </Link>
           </nav>
           <div className="header-actions">
             <button className="reservas-btn">RESERVAS</button>
@@ -42,6 +54,16 @@ export default function Header() {
             >
               <i className="fab fa-tripadvisor"></i>
             </a>
+            {/* Ícone do menu hambúrguer */}
+            <button
+              className="menu-hamburger"
+              onClick={() => setMenuAberto((v) => !v)}
+              aria-label="Abrir menu"
+            >
+              <span />
+              <span />
+              <span />
+            </button>
           </div>
         </div>
       </header>

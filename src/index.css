@@ -1,17 +1,41 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: 
+        linear-gradient(120deg, rgba(255,255,255,0.92) 60%, rgba(241,245,249,0.92) 100%),
+        url('/public/dragaofundo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#root {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    /* Garante que o conteúdo cresça e empurre o footer para baixo */
 }
 
 :root {
-  --color-primary: #00423d;
-  --color-header-bg: #000000;
-  --color-accent: #e6b17a;
-  --color-reservas: #d7263d;
-  --color-reservas-hover: #b71c2a;
-  --color-link-hover: #00e667;
+  --color-primary: #8c1f1f;           /* Vermelho escuro oriental */
+  --color-header-bg: #1a1a1a;         /* Preto suave */
+  --color-accent: #e6b17a;            /* Dourado suave */
+  --color-reservas: #d7263d;          /* Vermelho vibrante */
+  --color-reservas-hover: #b71c2a;    /* Vermelho escuro */
+  --color-link-hover: #e6b17a;        /* Dourado */
   --color-header-shadow: rgba(0,0,0,0.08);
-  --color-content-bg: #002f2c;
+  --color-content-bg: #fff8f0;        /* Bege claro */
+  --color-gray: #d8d8d8;
   --color-white: #fff;
 }
