@@ -20,39 +20,22 @@ export default function Values() {
             </section>
 
             {/* Rodízio Casal */}
-            <section className="home-section reverse">
-                <img
-                    src="/sushi4.jpeg"
-                    alt="Rodízio Casal"
-                    className="home-img"
-                />
+            <section className="home-section">
                 <div className="home-text">
-                    <h3>Rodízio Casal</h3>
-                    <h2>Almoço</h2>
-                    <p className="valor destaque">R$ 129,90</p>
-                    <h2>Jantar</h2>
+                    <h3>Rodízio-Casal</h3>
                     <p className="valor destaque">R$ 149,90</p>
                 </div>
             </section>
 
             {/* Horários e valores especiais */}
             <section className="home-section">
-                <img
-                    src="/sushi5.jpeg"
-                    alt="Horários e Feriados"
-                    className="home-img"
-                />
                 <div className="home-text">
-                    <h3>Horários</h3>
-                    <p>
-                        <strong>Almoço:</strong> 11h30 às 15h<br />
-                        <strong>Jantar:</strong> 18h às 23h
+                    <h3 style={{ fontSize: '30px', textAlign:'center',marginBottom: 90 } }>Horários</h3>
+                    <p style={{ fontSize: '25px', color: 'var( --color-black)'  } }>
+                    
+                        <strong>Jantar de Segunda à Domingo:</strong> 18h às 23,30h
                     </p>
-                    <h3>Finais de Semana e Feriados</h3>
-                    <p>
-                        <strong>Rodízio Individual:</strong> R$ 89,90<br />
-                        <strong>Rodízio Casal:</strong> R$ 169,90
-                    </p>
+                  
                 </div>
             </section>
 

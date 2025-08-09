@@ -43,3 +43,9 @@
     color: #b71c2a;
     margin-bottom: 12px;
 }
+.text-style{
+    font-size: 25px;
+    line-height: 1.6;
+    color: var(--color-gray);
+    margin-bottom: 20px;
+}
