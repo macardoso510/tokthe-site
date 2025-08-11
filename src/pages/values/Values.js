@@ -6,16 +6,19 @@ export default function Values() {
             {/* Rodízio Individual */}
             <section className="home-section">
                 <img
-                    src="/sushi3.jpeg"
+                    src="/imagem-rodizio.jpg"
                     alt="Rodízio Individual"
+                     style={{ marginTop: '70px', marginLeft: '50px' }} 
                     className="home-img"
                 />
                 <div className="home-text">
-                    <h3>Rodízio Individual</h3>
-                    <h2>Almoço</h2>
-                    <p className="valor destaque">R$ 69,90</p>
-                    <h2>Jantar</h2>
-                    <p className="valor destaque">R$ 79,90</p>
+                       <h3 style={{ fontSize: '30px', textAlign:'center',marginBottom: 90,color: '#1a1a1a' } }>Valores:</h3>
+                    <h3
+                    style={{ fontSize: '22px', textAlign:'t',marginBottom: 90 } }>Rodízio Individual de Segunda à Quinta:</h3>
+                    <p className="valor destaque">R$ 114,90</p>
+                     <h3 style={{ fontSize: '22px', textAlign:'left',marginBottom: 90 } }
+                     >Rodízio Individual de Sexta à Domingo:</h3>
+                     <p className="valor destaque">R$ 119,90</p>
                 </div>
             </section>
 
